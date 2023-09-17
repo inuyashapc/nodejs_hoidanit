@@ -9,7 +9,7 @@ const hostname = process.env.HOST_NAME;
 configViewEngine(app);
 
 //Khai bao route
-app.use("/test", webRoutes);
+app.use("/", webRoutes);
 app.listen(port, hostname, () => {
   console.log(`Example app listening on port ${port}`);
 });
